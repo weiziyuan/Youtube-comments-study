@@ -16,7 +16,7 @@ Specifically, we identify users commenting like 'my dog', 'I have a dog' , 'I ha
 Word2vec take a large corpus of text as it input and produces a vector space, which is typically of several hundred dimensions. Eachunique word in the corpus is assigned a corresponding vector in the space.
 Similar words are close in the vector space, making generalization to novel patterns easier and model estimation more robust.
 
-Reference : [click here](https://spark.apache.org/docs/latest/ml-features#word2vec)
+More about Word2vec : [click here](https://spark.apache.org/docs/latest/ml-features#word2vec)
 
 ## Train Models
 * Model selection: Logistic Regression (LR), Random Foerest (RF) and Graident Boosting Tree(GBT)
@@ -50,9 +50,11 @@ About 11% of the total users own pets, in other words, most users that contribut
 
 * Find Interesting Topics
 
--Train Latent Dirichlet Algolocation(LDA) learning model to obtain important topics.
+Extract features with CountVectorizer(convert a collection of text documents to vectors of token counts) and StopWordsRemover(exclude words that don't carry much meaningful information).Then, we train the model with LDA algorithm to obtain important topics of target users.
 
--LDA
+More about CountVectorizer and  StopWordsRemover :[click here](https://spark.apache.org/docs/2.1.0/ml-features.html#stopwordsremover)
+
+-Latent Dirichlet Algolocation(LDA)
 
 LDA is an important algorithm used for topic modelling.
 
