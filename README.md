@@ -17,8 +17,20 @@ Specifically, we identify users commenting like 'my dog', 'I have a dog' , 'I ha
 
 * Model selection: Logistic Regression (LR), Random Foerest (RF) and Graident Boosting Tree(GBT)
 * Peformance
+
+![alt text](https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/perform_all.png)
 * Confusion matrix
+
+![alt text](https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/cm_all.png)
 * ROC curve
 
+![alt text](https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/roc_all.png)
+
+## Model Application
+We will choose random forest model to classify all the users as we see it has the best performance.
+
+* Identify Users
 
 ![alt text](https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/owner_ratio.png)
+
+* Find Interesting Topics
