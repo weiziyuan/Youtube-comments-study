@@ -8,7 +8,7 @@ In this project, we analyzed a dataset of user comments on youtube videos relate
 * Remove the missing values 
 * Label the data
 
-Specifically, we identify users commenting like 'my dog', 'I have a dog' , 'I have a cat' etc as pets owners. Of course, we might miss some onwers. By trainign a model, we hope to identify these users. 
+Specifically, we identify users commenting like 'my dog', 'I have a dog' , 'I have a cat' and etc as pets owners. Of course, we might miss some owners. By trainign a model, we hope to identify these users. 
 
 *  Converted the comments texts to feature vectors using RegTokenizer and Word2Vec in Spark ML
 
@@ -19,7 +19,6 @@ Specifically, we identify users commenting like 'my dog', 'I have a dog' , 'I ha
   <img width="345" height="225" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/perform_all.png">
 </p>
 
-  
 * Confusion matrix
 
 ![alt text](https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/cm_all.png)
@@ -42,6 +41,34 @@ About 11% of the total users own pets, in other words, most users that contribut
 * Find Interesting Topics
 
 Train Latent Dirichlet Algolocation(LDA) learning model to obtain important topics.
+
+Topics that are interesting to non owners
+1. how they love the videos.
+
+2. how cute these pets are
+
+3. interest in coyote.
+
+<p align="center">
+  <img width="450" height="150" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/topic0.png">
+</p>
+
+Topics that are interesting to owners
+
+1. how they love their pets.
+
+2. get one more pet.
+
+ <p align="center">
+  <img width="450" height="150" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/topic1.png">
+</p>
  
-* Identify creators with the most pets owners
-* Identigy most active pets owners
+* Identify top 10 creators (who have the most pets owners commented on their channel)
+ <p align="center">
+  <img width="300" height="205" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/creators.png">
+</p>
+ 
+* Identify top 10 active pets owners (who comment the most)
+ <p align="center">
+  <img width="340" height="225" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/users.png">
+</p>
