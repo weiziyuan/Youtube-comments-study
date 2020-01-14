@@ -34,6 +34,8 @@ Reference : [click here](https://spark.apache.org/docs/latest/ml-features#word2v
   <img width="400" height="320" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/roc_all.png">
 </p>
 
+Hyperparameters tuning was implemented with gridsearch and crossvalidation.
+
 Overall, AUC: RF>LR>GBT. Accuracy: RF>LR>GBT
 
 ## Model Application
