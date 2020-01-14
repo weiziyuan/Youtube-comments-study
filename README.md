@@ -13,6 +13,11 @@ Specifically, we identify users commenting like 'my dog', 'I have a dog' , 'I ha
 
 *  Converted the comments texts to feature vectors using RegTokenizer and Word2Vec in Spark ML
 
+Word2vec take a large corpus of text as it input and produces a vector space, which is typically of several hundred dimensions. Eachunique word in the corpus is assigned a corresponding vector in the space.
+Similar words are close in the vector space, making generalization to novel patterns easier and model estimation more robust.
+
+Reference : [click here](https://spark.apache.org/docs/latest/ml-features#word2vec)
+
 ## Train Models
 * Model selection: Logistic Regression (LR), Random Foerest (RF) and Graident Boosting Tree(GBT)
 * Peformance
@@ -29,6 +34,8 @@ Specifically, we identify users commenting like 'my dog', 'I have a dog' , 'I ha
   <img width="400" height="320" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/roc_all.png">
 </p>
 
+Overall, AUC: RF>LR>GBT. Accuracy: RF>LR>GBT
+
 ## Model Application
 We will choose random forest model to classify all the users as we see it has the best performance.
 
@@ -41,9 +48,18 @@ About 11% of the total users own pets, in other words, most users that contribut
 
 * Find Interesting Topics
 
-Train Latent Dirichlet Algolocation(LDA) learning model to obtain important topics.
+-Train Latent Dirichlet Algolocation(LDA) learning model to obtain important topics.
 
-Topics that are interesting to non owners
+-LDA
+
+LDA is an important algorithm used for topic modelling.
+
+Ideas behind LDA: each document is a mixture of topics and each topics is a mixture of words.
+
+More about LDA : [click here](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
+
+-Topics that are interesting to non owners
+
 1. how they love the videos.
 
 2. how cute these pets are
@@ -54,7 +70,7 @@ Topics that are interesting to non owners
   <img width="450" height="150" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/topic0.png">
 </p>
 
-Topics that are interesting to owners
+-Topics that are interesting to owners
 
 1. how they love their pets.
 
