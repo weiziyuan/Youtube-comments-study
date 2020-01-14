@@ -21,4 +21,4 @@ Specifically, we identify users commenting like 'my dog', 'I have a dog' , 'I ha
 * ROC curve
 
 
-![alt text]()
+![alt text](https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/owner_ratio.png)
