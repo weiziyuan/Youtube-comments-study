@@ -15,9 +15,8 @@ Specifically, we identify users commenting like 'my dog', 'I have a dog' , 'I ha
 ## Train Models
 * Model selection: Logistic Regression (LR), Random Foerest (RF) and Graident Boosting Tree(GBT)
 * Peformance
-
 <p align="center">
-  <img width="460" height="300" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/perform_all.png">
+  <img width="345" height="225" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/perform_all.png">
 </p>
 
   
@@ -26,24 +25,23 @@ Specifically, we identify users commenting like 'my dog', 'I have a dog' , 'I ha
 ![alt text](https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/cm_all.png)
 
 * ROC curve
-
 <p align="center">
-  <img src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/roc_all.png">
+  <img width="400" height="320" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/roc_all.png">
 </p>
 
 ## Model Application
 We will choose random forest model to classify all the users as we see it has the best performance.
 
 * Identify Users
-
 <p align="center">
-  <img src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/owner_ratio.png">
+  <img  width="400" height="320" src="https://github.com/weiziyuan/Youtube-comments-study/blob/master/Images/owner_ratio.png">
 </p>
 
-
-It is found that about 11% of the total users own pets. So I concluded that most users don't have a cat or dog. Therefore, I believe it would be quite helpful to find topics that are interesting to these users in order to gain more views on the videos.
+About 11% of the total users own pets, in other words, most users that contribute to the comments/video click don't have a cat or dog. Therefore, I believe it would be quite helpful to find common topics among these users.
 
 * Find Interesting Topics
 
 Train Latent Dirichlet Algolocation(LDA) learning model to obtain important topics.
  
+* Identify creators with the most pets owners
+* Identigy most active pets owners
